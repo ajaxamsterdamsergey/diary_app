@@ -1,0 +1,120 @@
+.App {
+  font-weight: 400;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: #353535;
+  font-size: 16px;
+  line-height: 1.6em;
+  background-color: #f9f9f9;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.Wrapper{
+  font-weight: 400;
+  text-align: center;
+  color: #353535;
+  font-size: 16px;
+  line-height: 1.6em;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.asideWrapper{
+  font-weight: 400;
+  text-align: center;
+  color: #353535;
+  font-size: 16px;
+  line-height: 1.6em;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+.reactAside{
+ font-weight: 400;
+  text-align: center;
+  color: #353535;
+  font-size: 16px;
+  line-height: 1.6em;
+  box-sizing: border-box;
+  display: block;
+  min-height: 100vh;
+  height: 100%;
+  max-width: 600px;
+  width: 100%;
+  background-color: #2b2f3e;
+  padding: 10px;
+}
+.reactAside h2 {
+  color: white;
+}
+
+.reactAside div {
+  color: #5b5d63;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.wrapperComponents{
+  justify-content: space-around!important;
+}
+.mainContainer{
+  margin-top: 20px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1200px){
+  .container {
+   max-width: 1140px; 
+}
+.row{
+  flex-wrap: nowrap; 
+}
+}
+
+@media (min-width: 992px){
+  .container {
+    max-width: 960px;
+}
+}
+@media (min-width: 768px){
+  .container {
+    max-width: 720px;
+}
+}
+
+@media (min-width: 576px){
+  .container {
+    max-width: 540px;
+}
+.mainWrapper{
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+}
+
+
+
+

@@ -1,0 +1,33 @@
+.card{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem
+}
+.cardColor{
+    width: 50px;
+    height: 50px;
+}
+.cardBody{
+    padding: 0 0 0 10px;
+    flex: 1 1 auto;
+}
+.reactComment .card pre {
+    text-align: left;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 400px;
+}
+.cardText:last-child {
+    margin-bottom: 0;
+}
+.cardText{
+    margin: 0;
+}

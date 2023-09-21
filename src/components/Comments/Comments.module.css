@@ -1,0 +1,93 @@
+.reactComments {
+    height: fit-content;
+    min-width: 500px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+  .reactComments h1 {
+    text-align: left;
+    font-weight: normal;
+    color: gray;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.pre {
+    overflow: auto;
+    margin-top: 0;
+    display: block;
+    font-size: 87.5%;
+    color: #212529;
+}
+.reactComments form {
+    margin-top: 20px;
+    display: flex;
+}
+.reactComments form input[type=color] {
+    width: 100px;
+    height: 60px;
+}
+.titleId{
+    font-size: 1.5rem;
+}
+.formControl {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.formControl:focus {
+    box-sizing: border-box;
+    border-color: rgb(65, 178, 231, 0.5); 
+    outline: none; 
+    border-width: 2px;
+  }
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+.reactComments form textarea {
+    margin: 0 10px;
+}
+textarea.formControl:focus {
+    height: 62px;
+}
+textarea.formControl {
+    height: auto;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+  .btnPrimary {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  .btnPrimary:hover {
+    color: #fff;
+    background-color: #4e97e6;
+    border-color: #4e97e6;
+}
