@@ -1,5 +1,7 @@
 import { useEffect  } from 'react';
 import { nanoid } from 'nanoid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import styles from './App.module.css';
 import Items from "./components/Items/Items";
 import Comments from "./components/Comments/Comments";
@@ -39,6 +41,7 @@ useEffect(() => {
               activeItem: newActiveItem
           };
       });
+      toast.success(`Item "${state.inputValue}" added successfully!`, { theme: 'colored' });
   };
   
     const handleAddComment = (color, text) => {
@@ -56,6 +59,8 @@ useEffect(() => {
                   }
               }
           }));
+          const itemName = state.items[state.activeItem]?.text || 'Неизвестный элемент';
+          toast.success(`Comment "${itemName}" added successfully! `);
       }
   };
 
@@ -83,6 +88,8 @@ useEffect(() => {
 
         return { ...prevState, items: remainingItems, activeItem: newActiveItem };
     });
+    const deletedItemName = state.items[id]?.text || "Неизвестный элемент";
+    toast.warn(`Item "${deletedItemName}"deleted successfully!`);
 };
 
     
@@ -96,6 +103,7 @@ useEffect(() => {
   
     return (
       <div className={styles.App}>
+        <ToastContainer autoClose={3000} theme='colored'/>
         <div className={styles.Wrapper}>
           <div className={styles.asideWrapper}>
             <aside className={styles.reactAside}>
